@@ -5,7 +5,7 @@
 #include <vector>
 #include <string>
 class Tree {
-private:
+ private:
 	struct  Branch {
 		char Data;
 		std::vector<Branch*> subsidiary;
@@ -15,7 +15,7 @@ private:
 	std::string element;
 	std::vector<char> trunsf;
 	std::vector <std::vector<char>> res;
-public:
+ public:
 	explicit Tree(std::vector <char> in) {
 		val = in;
 		element.resize(in.size());
