@@ -1,14 +1,13 @@
 // Copyright 2022 NNTU-CS
 #ifndef INCLUDE_TREE_H_
 #define INCLUDE_TREE_H_
-#include <vector>
 #include <iostream>
+#include <vector>
 #include <string>
 class Tree {
  private:
   struct  Branch {
     char Data;
-    std::vector<Branch*> subsidiary;
     std::vector<Branch*> subsidiary;
   };
   Branch* root;
@@ -17,9 +16,6 @@ class Tree {
   std::string element;
   std::vector<char> trunsf;
   std::vector <std::vector<char>> res;
-
- public:
-  explicit Tree(std::vector <char> in) {
   public:
     explicit Tree(std::vector <char> in) {
       val = in;
