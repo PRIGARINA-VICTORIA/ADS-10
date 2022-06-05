@@ -38,13 +38,11 @@ class Tree {
       }
       auto c = in.cbegin();
       if (b >= 0) {
-        if (b >= 0) {
           num++;
           in.erase(c + b);
         }
         for (int i = 0; i < in.size(); i++) {
           root->subsidiary.push_back(Create_Tree(in[i]));
-          trunsf[num] = in[i];
           trunsf[num] = in[i];
           transformm(in, i, num, root->subsidiary[i]);
         }
