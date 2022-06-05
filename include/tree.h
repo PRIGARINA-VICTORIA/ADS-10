@@ -15,6 +15,7 @@ class Tree {
 	std::string element;
 	std::vector<char> trunsf;
 	std::vector <std::vector<char>> res;
+	
  public:
 	explicit Tree(std::vector <char> in) {
 		val = in;
