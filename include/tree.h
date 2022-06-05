@@ -52,4 +52,4 @@ class Tree {
     return res[num - 1];
   }
 };
-#endif
+#endif  // INCLUDE_TREE_H_
