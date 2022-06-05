@@ -47,7 +47,7 @@ class Tree {
           transformm(in, i, num, root->subsidiary[i]);
         }
       }
-      std::vector<char> getPerm(Tree tree, int num) {
+      std::vector<char> getPerm(Tree& tree, int num) {
         if (num > res.size())return{};
         return res[num - 1];
       }
