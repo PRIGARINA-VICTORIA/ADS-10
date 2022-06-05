@@ -52,3 +52,4 @@ class Tree {
     return res[num - 1];
   }
 };
+#endif
